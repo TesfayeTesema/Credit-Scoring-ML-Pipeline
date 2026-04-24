@@ -1,12 +1,28 @@
-# Credit Scoring ML Pipeline
+# CreditGuard AI: End-to-End Credit Scoring Pipeline
+Predicting financial distress with explainable AI to support data-driven lending decisions.
 
-This repository contains a full, production-ready Machine Learning pipeline for credit scoring. It predicts whether a borrower will experience 90-days-or-more delinquency within the next 2 years (`SeriousDlqin2yrs`), utilizing anonymized consumer credit bureau records.
+ Project Overview
+In the context of inclusive finance (specifically modeled for Ahadu Bank), this project implements a full-scale Machine Learning lifecycle to predict whether a borrower will experience 90-days-or-more delinquency within the next two years.
+By utilizing historical bureau data of 150,000 borrowers, this pipeline transforms raw, "noisy" data into a production-ready model capable of identifying high-risk individuals while providing clear explanations for every decision.
 
 ## Business Objective
 In the context of inclusive finance, accurately assessing credit risk is crucial. This pipeline provides:
 - **High Recall**: Prioritizes catching potential defaults.
 - **Explainability**: Uses SHAP values to understand *why* a model made a specific decision.
 - **Robustness**: Handles high class imbalance using SMOTE and algorithm-level class weighting.
+
+🚀 The 10-Step Pipeline Architecture
+The project is strictly modularized into the standard ML lifecycle:
+Define Problem 🎯: Goal setting and success metric (ROC-AUC > 0.75) definition.
+Data Collection 📥: Auditing 150k records and identifying high class imbalance.
+Data Cleaning 🩹: Smart imputation (Age-Decade Medians) and outlier capping.
+EDA 📊: Statistical correlation analysis and feature relationship mapping.
+Feature Engineering 🛠️: Creating synthetic features like TotalDelinquencies and DisposableIncome.
+Data Splitting ⚖️: Stratified splitting and SMOTE balancing of the training set.
+Model Selection 🧠: Comparative analysis of Logistic Regression, Random Forest, and XGBoost.
+Evaluation ✅: Validating performance using Recall, F1-Score, and ROC Curves.
+Tuning & SHAP 🎛️: Hyperparameter optimization and Explainable AI (XAI) logic.
+Deployment & Monitoring 🚀: Model serialization and Population Stability Index (PSI) tracking.
 
 ## Project Structure
 The pipeline is strictly structured into the standard 10-step Machine Learning Lifecycle:
