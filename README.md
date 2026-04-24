@@ -13,9 +13,9 @@ In the context of inclusive finance, accurately assessing credit risk is crucial
 
 ## The 10-Step Pipeline Architecture
 -The project is strictly modularized into the standard ML lifecycle:
-- **Define Problem : Goal setting and success metric (ROC-AUC > 0.75) definition.
-- **Data Collection: Auditing 150k records and identifying high class imbalance.
-- **Data Cleaning: Smart imputation (Age-Decade Medians) and outlier capping.
+- Define Problem : Goal setting and success metric (ROC-AUC > 0.75) definition.
+- Data Collection: Auditing 150k records and identifying high class imbalance.
+- Data Cleaning: Smart imputation (Age-Decade Medians) and outlier capping.
 - **EDA: Statistical correlation analysis and feature relationship mapping.
 - **Feature Engineering: Creating synthetic features like TotalDelinquencies and DisposableIncome.
 - **Data Splitting : Stratified splitting and SMOTE balancing of the training set.
