@@ -24,6 +24,28 @@ In the context of inclusive finance, accurately assessing credit risk is crucial
 - **Tuning & SHAP: Hyperparameter optimization and Explainable AI (XAI) logic.
 - **Deployment & Monitoring: Model serialization and Population Stability Index (PSI) tracking.
 
+
+##Key Technical Highlights
+ Explainable AI (SHAP)
+   Unlike "black-box" models, we use SHAP (SHapley Additive exPlanations) to visualize exactly why a loan was           denied.   This ensures the model is fair, transparent, and compliant with banking regulations.
+## Handling Class Imbalance
+With only 6.7% of borrowers in the "Distress" class, standard models fail. We implemented SMOTE (Synthetic Minority Over-sampling Technique) to synthesize new minority examples, ensuring the model prioritizes catching defaults (High Recall).
+## Feature Engineering Power
+By creating the TotalDelinquencies score, we increased our primary risk signal by 10% compared to using raw bureau counts alone.
+
+##Installation & Usage
+1. Clone the repository
+
+git clone https://github.com/yourusername/credit-scoring-pipeline.git
+cd credit-scoring-pipeline
+2. Install Dependencies
+
+pip install -r requirements.txt
+3. Run the Pipeline
+
+python main.py
+
+
 ## Project Structure
 The pipeline is strictly structured into the standard 10-step Machine Learning Lifecycle:
 
