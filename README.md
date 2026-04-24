@@ -11,18 +11,18 @@ In the context of inclusive finance, accurately assessing credit risk is crucial
 - **Explainability**: Uses SHAP values to understand *why* a model made a specific decision.
 - **Robustness**: Handles high class imbalance using SMOTE and algorithm-level class weighting.
 
-🚀 The 10-Step Pipeline Architecture
-The project is strictly modularized into the standard ML lifecycle:
-Define Problem 🎯: Goal setting and success metric (ROC-AUC > 0.75) definition.
-Data Collection 📥: Auditing 150k records and identifying high class imbalance.
-Data Cleaning 🩹: Smart imputation (Age-Decade Medians) and outlier capping.
-EDA 📊: Statistical correlation analysis and feature relationship mapping.
-Feature Engineering 🛠️: Creating synthetic features like TotalDelinquencies and DisposableIncome.
-Data Splitting ⚖️: Stratified splitting and SMOTE balancing of the training set.
-Model Selection 🧠: Comparative analysis of Logistic Regression, Random Forest, and XGBoost.
-Evaluation ✅: Validating performance using Recall, F1-Score, and ROC Curves.
-Tuning & SHAP 🎛️: Hyperparameter optimization and Explainable AI (XAI) logic.
-Deployment & Monitoring 🚀: Model serialization and Population Stability Index (PSI) tracking.
+## The 10-Step Pipeline Architecture
+-The project is strictly modularized into the standard ML lifecycle:
+- **Define Problem : Goal setting and success metric (ROC-AUC > 0.75) definition.
+- **Data Collection: Auditing 150k records and identifying high class imbalance.
+- **Data Cleaning: Smart imputation (Age-Decade Medians) and outlier capping.
+- **EDA: Statistical correlation analysis and feature relationship mapping.
+- **Feature Engineering: Creating synthetic features like TotalDelinquencies and DisposableIncome.
+- **Data Splitting : Stratified splitting and SMOTE balancing of the training set.
+- **Model Selection: Comparative analysis of Logistic Regression, Random Forest, and XGBoost.
+- **Evaluation: Validating performance using Recall, F1-Score, and ROC Curves.
+- **Tuning & SHAP: Hyperparameter optimization and Explainable AI (XAI) logic.
+- **Deployment & Monitoring: Model serialization and Population Stability Index (PSI) tracking.
 
 ## Project Structure
 The pipeline is strictly structured into the standard 10-step Machine Learning Lifecycle:
