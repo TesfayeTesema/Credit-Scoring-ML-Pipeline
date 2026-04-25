@@ -5,11 +5,14 @@ Predicting financial distress with explainable AI to support data-driven lending
 In the context of inclusive finance (specifically modeled for Ahadu Bank), this project implements a full-scale Machine Learning lifecycle to predict whether a borrower will experience 90-days-or-more delinquency within the next two years.
 By utilizing historical bureau data of 150,000 borrowers, this pipeline transforms raw, "noisy" data into a production-ready model capable of identifying high-risk individuals while providing clear explanations for every decision.
 
+
+
 ## Business Objective
 In the context of inclusive finance, accurately assessing credit risk is crucial. This pipeline provides:
 - **High Recall**: Prioritizes catching potential defaults.
 - **Explainability**: Uses SHAP values to understand *why* a model made a specific decision.
 - **Robustness**: Handles high class imbalance using SMOTE and algorithm-level class weighting.
+
 
 ## The 10-Step Pipeline Architecture
 -The project is strictly modularized into the standard ML lifecycle:
@@ -46,6 +49,8 @@ pip install -r requirements.txt
 python main.py
 
 
+
+
 ## Project Structure
 The pipeline is strictly structured into the standard 10-step Machine Learning Lifecycle:
 
@@ -66,6 +71,7 @@ The pipeline is strictly structured into the standard 10-step Machine Learning L
 │   ├── step_09_hyperparameter_tuning.py         # RandomizedSearchCV and SHAP explainability
 │   └── step_10_deployment_monitoring.py         # Serialization and PSI monitoring strategy
 ```
+
 
 ## Setup & Installation
 
