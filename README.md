@@ -36,7 +36,7 @@ By creating the TotalDelinquencies score, we increased our primary risk signal b
 ##Installation & Usage
 1. Clone the repository
 
-git clone https://github.com/yourusername/credit-scoring-pipeline.git
+git clone https://github.com/TesfayeTesema/credit-scoring-pipeline.git
 cd credit-scoring-pipeline
 2. Install Dependencies
 
